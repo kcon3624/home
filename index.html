@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <script src="index.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F6f%2F83%2F67%2F6f836702341fb7b87455d03dc0023ca7.jpg&type=sc960_832);
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        .time {
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .greating {
+            font-size: 30px;
+        }
+        .todo {
+            font-size: 50px;
+        }
+        .author {
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .content {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .main {
+            width: 100vw;
+            height: 80vh;
+
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quote {
+            width: 100vw;
+            height: 10vh;
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: rgb(20, 23, 224);
+        }
+
+    </style>
+
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="time" class="time">12:00</div>
+        <div class="greating">Hello, ^^</div>
+        <div class="todo">study</div>
+    </div>
+    <div class="quote">
+        <div id="author" class="author">-명언의 저자 -</div>
+        <div id="content" class="content">"명언의 내용"</div>
+    </div>
+
+</body>
+
+</html>
