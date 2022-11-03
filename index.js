@@ -26,8 +26,8 @@ function renderQuote() {
 }
 
 //날씨
-function renderHweater() {
-    let url = `https://goweather.herokuapp.com/weather/Seoul`;
+function renderHweather() {
+    let url = `https://goweather.herokuapp.com/weather/Busan`;
     fetch(url)
         .then(res => res.json()).then((data) => {
             let weather = `" ${data['weather']} "`;
