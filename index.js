@@ -16,11 +16,21 @@ function renderCurrentTime() {
 //명언
 function renderQuote() {
     let url = `https://api.quotable.io/random`;
-    fetch(url) 
+    fetch(url)
         .then(res => res.json()).then((data) => {
             let content = `" ${data['content']} "`;
             let author = `- ${data['author']} -`;
             $('#content').text(content);
             $('#author').text(author);
+        });
+}
+
+//날씨
+function renderHweater() {
+    let url = `https://goweather.herokuapp.com/weather/Seoul`;
+    fetch(url)
+        .then(res => res.json()).then((data) => {
+            let weather = `" ${data['weather']} "`;
+            $('#weather').text(weather);
         });
 }
